@@ -17,7 +17,14 @@ angular.module('netRouletteApp')
     };
     $scope.buttonText = 'Submit';
     $scope.result = {
-      show_title: 'my movie'
+      show_title: "Cast Away",
+      poster: "http://netflixroulette.net/api/posters/60020683.jpg",
+      director: "Robert Zemeckis",
+      rating: "3.8",
+      category: "Dramas",
+      summary: "After FedEx systems engineer Chuck Noland's plane crashes in the Pacific Ocean, he finds himself fighting to survive on a deserted island.",
+      release_year: "1992",
+      show_cast: "Tom Hanks, Helen Hunt, Nick Searcy, Chris Noth, Lari White, Geoffrey Blake, Jenifer Lewis, Nan Martin, Wendy Worthington, Valerie Wildman, Steve Monroe, Elden Henson, Jay Acovone, Christopher Kriesa, Michael Forest, Ashley Edner"
     }
     // $scope.director = '';
 
