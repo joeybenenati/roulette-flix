@@ -40,6 +40,10 @@ angular.module('netRouletteApp')
       console.log("result:", $scope.result.show_title);
     };
 
+    $scope.hasResult = function () {
+      return ($scope.result.director)
+    }
+
     $scope.spin = function () {
       // console.log('scope.search', $scope.search)
       Submit.spin($scope.search)
@@ -47,10 +51,10 @@ angular.module('netRouletteApp')
           console.log('data', data);
           $scope.result = data[Math.floor(Math.random() * data.length)];
           console.log('$scope.result2:', $scope.result.show_title);
-          $location.path('/');
-          setTimeout(function (){
-            $location.path('/');
-          }, 5000);
+          // $location.path('/');
+          // setTimeout(function (){
+          //   $location.path('/');
+          // }, 5000);
         });
     };
 

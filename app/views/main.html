@@ -1,5 +1,5 @@
 <div class="jumbotron" ng-controller="MainCtrl">
-  <h1>Roulette Flix</h1>
+  <h1>ROULET-FLIX</h1>
 
 </div>
 <div class="filters">
@@ -8,11 +8,11 @@
     <input type='text' ng-model='search.director' placeholder='Director'>
     <!-- <input type='text' ng-model='search.genre' placeholder='Genre'> -->
     <input type='text' ng-model='search.year' placeholder='Year'><br>
-    <button class='btn'>SPIN</button>
-  </form>  
+    <button class='btn'>Spin</button>
+  </form>
 </div>
 
-  <div class='container resContainer'>
+  <div class='container resContainer' ng-show='hasResult()'>
     <div class='result'>
       <div class='poster'>
       <img src='{{result.poster}}'/>
@@ -27,3 +27,6 @@
     </div>
     <!-- <a class='btn' href='/#/about'>{{buttonText}}</a> -->
   </div>
+  <!-- <div class='container spinner'>
+    <img src="../images/loading_spinner.png">
+  </div> -->

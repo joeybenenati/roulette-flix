@@ -20,8 +20,8 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+  /*border-bottom: 1px solid #e5e5e5;*/
+  /*margin-bottom: 10px;*/
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -29,6 +29,11 @@ body {
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
+}
+
+.navbar {
+  background-color: #1D1D1D;
+  border-color: #777;
 }
 
 /* Custom page footer */
@@ -44,14 +49,43 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  width: 100%;
   background-color: #b9090b;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  color: white;
 }
+
+.navbar-brand {
+  background-color: #b9090b;
+  color: white;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-shadow:
+    0px 0px #0A0A0A,
+    1px 1px #0A0A0A,
+    2px 2px #0A0A0A,
+    3px 3px #0A0A0A;
+}
+
+.jumbotron h1 {
+  font-size: 74px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-shadow:
+    0px 0px #0A0A0A,
+    1px 1px #0A0A0A,
+    2px 2px #0A0A0A,
+    3px 3px #0A0A0A,
+    4px 4px #0A0A0A,
+    5px 5px #0A0A0A,
+    6px 6px #0A0A0A;
+}
+
 .btn {
   margin-top: 25px;
   font-size: 21px;
   padding: 5px 24px;
+  color: white;
+  background-color: #b9090b;
 }
 
 .filters {
@@ -59,6 +93,11 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 20px
+}
+
+.spinner {
+  margin: 0 auto;
+  border: none;
 }
 
 form input {
@@ -69,6 +108,9 @@ form input {
   background-color: #0A0A0A;
   padding: 20px;
   margin-bottom: 40px;
+  border-radius: 5px;
+  /*margin-right: 0px;*/
+  /*padding-right: 0px;*/
 }
 
 .poster {
@@ -78,7 +120,8 @@ form input {
 
 .about {
   padding-top: 1px;
-  padding-right: 20px;
+  padding-right: 10px;
+  color: #999;
 }
 
 /* Supporting marketing content */
