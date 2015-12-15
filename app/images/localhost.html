@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://localhost:9000/#/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link href="./localhost_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./localhost_files/bootstrap.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="./localhost_files/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="netRouletteApp" class="ng-scope">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="./localhost_files/localhost.html">ROULET-FLIX</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="./localhost_files/localhost.html">Home</a></li>
+              <li><a ng-controller="MainCtrl" href="" ng-click="toggle()" class="ng-scope">About</a></li>
+              <li><a ng-href="#/" href="./localhost_files/localhost.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-controller="MainCtrl" class="ng-scope">
+      <!-- <a class="large button" href="" ng-click="toggle()">Open Demo</a> -->
+      <div pageslide="" ps-open="checked">
+          <div style="padding:20px" id="demo-right">
+              <h2>Hello Pageslide</h2>
+              <p>Put here whatever you want</p>
+              <a ng-click="toggle()" class="button">Close</a>
+          </div>
+      </div>
+  </div>
+
+    <div class="container">
+    <!-- ngView:  --><div ng-view="" class="ng-scope"><div class="jumbotron ng-scope" ng-controller="MainCtrl">
+  <h1>ROULET-FLIX</h1>
+
+</div>
+<div class="filters ng-scope">
+  <form ng-submit="spin()" class="ng-pristine ng-valid">
+    <input type="text" ng-model="search.actor" placeholder="  Actor" class="ng-pristine ng-untouched ng-valid">
+    <input type="text" ng-model="search.director" placeholder="  Director" class="ng-pristine ng-untouched ng-valid">
+    <!-- <input type='text' ng-model='search.genre' placeholder='Genre'> -->
+    <input type="text" ng-model="search.year" placeholder="  Year" class="ng-pristine ng-untouched ng-valid"><br>
+    <button class="btn">Spin</button>
+  </form>
+</div>
+
+  <div class="container resContainer ng-scope ng-hide" ng-show="hasResult()">
+    <div class="result">
+      <div class="poster">
+      <img src="">
+      </div>
+      <div class="about">
+        <h1 class="ng-binding"></h1>
+        <p class="ng-binding"><strong>Netflix rating:</strong>  </p>
+        <p class="ng-binding"></p>
+        <p class="ng-binding"><strong>Director: </strong></p>
+        <p class="ng-binding"><strong>Cast: </strong>  </p>
+      </div>
+    </div>
+    <!-- <a class='btn' href='/#/about'>{{buttonText}}</a> -->
+  </div>
+
+  <div class="ng-scope">
+      <a class="large button" href="" ng-click="toggle()">Open Demo</a>
+      <div pageslide="" ps-open="checked">
+          <div style="padding:20px" id="demo-right">
+              <h2>Hello Pageslide</h2>
+              <p>Put here whatever you want</p>
+              <a ng-click="toggle()" class="button">Close</a>
+          </div>
+      </div>
+  </div>
+  <!-- <div class='container spinner'>
+    <img src="../images/loading_spinner.png">
+  </div> -->
+</div>
+    </div>
+
+    <!-- <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div> -->
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="./localhost_files/angular.js"></script>
+    <script src="./localhost_files/bootstrap.js"></script>
+    <script src="./localhost_files/angular-animate.js"></script>
+    <script src="./localhost_files/angular-cookies.js"></script>
+    <script src="./localhost_files/angular-resource.js"></script>
+    <script src="./localhost_files/angular-route.js"></script>
+    <script src="./localhost_files/angular-sanitize.js"></script>
+    <script src="./localhost_files/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="./localhost_files/app.js"></script>
+        <script src="./localhost_files/main.js"></script>
+        <script src="./localhost_files/about.js"></script>
+        <script src="./localhost_files/spinfactory.js"></script>
+        <!-- endbuild -->
+<script src="./localhost_files/livereload.js" async="" defer=""></script>
+
+</body></html>

@@ -1,1 +1,13 @@
-<p>This is the about view.</p>
+<div>
+ <h1>HISTORY</h1>
+</div>
+
+<div class="container" ng-controller='MainCtrl'>
+  <ul>
+    <li class="history" ng-repeat='movie in history'>
+      <!-- <img class='history' src="{{movie.poster}}"> -->
+      <div class='title'> {{movie.show_title}}</div>
+      <div class='summary'>{{movie.summary}}</div>
+    </li>
+  </ul>
+</div>
